@@ -1,9 +1,10 @@
-import Navbar from "./component/navbar";
+import Navbar from "./components/navbar";
 
-export default function Home(){
-  return(
+export default function Home() {
+  return (
     <>
       <Navbar />
-    </>
-  )
+      <h1>Ini Halaman Home</h1>
+    </>
+  );
 }
