@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,14 +10,12 @@ const About = ({ data }) => {
         <title>About | Belajar Next JS</title>
         <meta name="description" content="Belajar Next JS" />
       </Head>
-      <navbar />
+      <Navbar />
       <Image src="/next.svg" alt="Logo Next JS" width={100} height={100} />
       <h1>Ini Halaman About</h1>
       {data.map((item) => (
         <div key={item.id}>
-          <Link href={`/about/${item.id}`}>
-            <h2>{item.name}</h2>
-          </Link>
+          <h2>{item.name}</h2>
         </div>
       ))}
     </>
